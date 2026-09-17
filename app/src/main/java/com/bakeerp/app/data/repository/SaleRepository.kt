@@ -25,7 +25,7 @@ class SaleRepository(
     suspend fun sumRevenue(start: Long, end: Long): Double = saleDao.sumRevenue(start, end)
 
     suspend fun saveSale(record: SaleRecordEntity): Long {
-        record.totalPrice = record.quantity * record.unitPrice
-        return saleDao.upsert(record)
+        val normalized = record.copy(totalPrice = record.quantity * record.unitPrice)
+        return saleDao.upsert(normalized)
     }
 }

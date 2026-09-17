@@ -49,6 +49,7 @@ import com.bakeerp.app.R
 import com.bakeerp.app.data.database.entity.RecipeEntity
 import com.bakeerp.app.ui.components.EmptyHint
 
+@Composable
 private fun obtainVm(): RecipeViewModel {
     val app = LocalContext.current.applicationContext as com.bakeerp.app.BakeErpApplication
     return viewModel(factory = RecipeViewModel.Factory(app))

@@ -5,6 +5,7 @@ import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.SavedStateHandle
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
+import androidx.lifecycle.createSavedStateHandle
 import androidx.lifecycle.viewModelScope
 import androidx.lifecycle.viewmodel.CreationExtras
 import com.bakeerp.app.BakeErpApplication
@@ -100,7 +101,7 @@ class RecipeViewModel(
     class Factory(private val app: Application) : ViewModelProvider.Factory {
         @Suppress("UNCHECKED_CAST")
         override fun <T : ViewModel> create(modelClass: Class<T>, extras: CreationExtras): T {
-            val handle = androidx.lifecycle.SavedStateHandleSupport.createSavedStateHandle(extras)
+            val handle = extras.createSavedStateHandle()
             return RecipeViewModel(app, handle) as T
         }
     }

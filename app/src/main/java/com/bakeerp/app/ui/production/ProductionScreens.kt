@@ -49,6 +49,7 @@ import com.bakeerp.app.R
 import com.bakeerp.app.ui.components.EmptyHint
 import com.bakeerp.app.util.DateUtils
 
+@Composable
 private fun obtainVm(): ProductionViewModel {
     val app = LocalContext.current.applicationContext as com.bakeerp.app.BakeErpApplication
     return viewModel(factory = ProductionViewModel.Factory(app))

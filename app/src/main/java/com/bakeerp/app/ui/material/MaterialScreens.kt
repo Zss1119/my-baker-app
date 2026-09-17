@@ -51,6 +51,7 @@ import com.bakeerp.app.data.database.entity.PurchaseRecordEntity
 import com.bakeerp.app.ui.components.EmptyHint
 import com.bakeerp.app.util.DateUtils
 
+@Composable
 private fun obtainVm(): MaterialViewModel {
     val app = LocalContext.current.applicationContext as com.bakeerp.app.BakeErpApplication
     return viewModel(factory = MaterialViewModel.Factory(app))
@@ -114,7 +115,7 @@ fun MaterialDetailScreen(materialId: Long, onBack: () -> Unit, onEdit: () -> Uni
     val vm = obtainVm()
     LaunchedEffect(materialId) { vm.loadMaterial(materialId) }
     val entity by vm.editing.collectAsStateWithLifecycle()
-    val history by vm.observeHistory(materialId).collectAsStateWithLifecycle(initial = emptyList())
+    val history by vm.observeHistory(materialId).collectAsStateWithLifecycle(initialValue = emptyList())
 
     Scaffold(
         topBar = {
