@@ -1,7 +1,6 @@
 plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
-    id("org.jetbrains.kotlin.plugin.compose")
     id("com.google.devtools.ksp")
 }
 
@@ -50,6 +49,11 @@ android {
             "-opt-in=kotlinx.coroutines.ExperimentalCoroutinesApi",
             "-opt-in=androidx.compose.material3.ExperimentalMaterial3Api"
         )
+    }
+
+    // Kotlin 1.9.24 需显式指定 Compose 编译器扩展版本
+    composeOptions {
+        kotlinCompilerExtensionVersion = "1.5.14"
     }
 
     buildFeatures {
