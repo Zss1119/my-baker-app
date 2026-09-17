@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">烘焙工坊</string>
+
+    <!-- Tab 标题 -->
+    <string name="tab_home">首页</string>
+    <string name="tab_material">原材料</string>
+    <string name="tab_production">制作</string>
+    <string name="tab_sale">销售</string>
+    <string name="tab_settings">设置</string>
+
+    <!-- 通用 -->
+    <string name="action_add">新增</string>
+    <string name="action_edit">编辑</string>
+    <string name="action_delete">删除</string>
+    <string name="action_save">保存</string>
+    <string name="action_cancel">取消</string>
+    <string name="action_confirm">确认</string>
+    <string name="action_back">返回</string>
+    <string name="action_more">更多</string>
+
+    <!-- 首页 -->
+    <string name="home_greeting">欢迎回家，烘焙愉快</string>
+    <string name="home_card_inventory_warning">库存预警</string>
+    <string name="home_card_expiry_warning">保质期预警</string>
+    <string name="home_card_today_sales">今日销售</string>
+    <string name="home_card_month_profit">本月利润</string>
+
+    <!-- 原材料 -->
+    <string name="material_list_title">原材料库存</string>
+    <string name="material_add_title">新增原材料</string>
+    <string name="material_edit_title">编辑原材料</string>
+    <string name="material_detail_title">原材料详情</string>
+    <string name="material_field_name">名称</string>
+    <string name="material_field_unit">单位</string>
+    <string name="material_field_stock">当前库存</string>
+    <string name="material_field_safety_stock">安全库存</string>
+    <string name="material_field_unit_price">单价</string>
+    <string name="material_field_notes">备注</string>
+    <string name="material_purchase_history">采购历史</string>
+    <string name="material_add_purchase">新增采购</string>
+
+    <!-- 配方 -->
+    <string name="recipe_list_title">配方列表</string>
+    <string name="recipe_add_title">新增配方</string>
+    <string name="recipe_edit_title">编辑配方</string>
+    <string name="recipe_field_name">配方名称</string>
+    <string name="recipe_field_product">产出产品</string>
+    <string name="recipe_field_expected_output">产出数量</string>
+    <string name="recipe_field_output_unit">产出单位</string>
+    <string name="recipe_field_description">说明</string>
+    <string name="recipe_items">原料用量</string>
+    <string name="recipe_add_item">添加原料</string>
+
+    <!-- 制作 -->
+    <string name="production_list_title">制作记录</string>
+    <string name="production_add_title">新增制作</string>
+    <string name="production_field_recipe">配方</string>
+    <string name="production_field_batch">批次量</string>
+    <string name="production_field_produced">实际产出</string>
+    <string name="production_preview_consumption">原料消耗预览</string>
+
+    <!-- 销售 -->
+    <string name="sale_list_title">销售记录</string>
+    <string name="sale_add_title">新增销售</string>
+    <string name="sale_field_product">销售产品</string>
+    <string name="sale_field_quantity">数量</string>
+    <string name="sale_field_unit_price">单价</string>
+    <string name="sale_field_customer">客户（邻居）</string>
+    <string name="sale_field_payment">支付方式</string>
+
+    <!-- 设置 -->
+    <string name="settings_title">设置</string>
+    <string name="settings_reminder">到期与库存提醒</string>
+    <string name="settings_reminder_desc">开启后将在每日 09:00 检查保质期与库存</string>
+    <string name="settings_export">导出数据（JSON）</string>
+    <string name="settings_import">导入数据</string>
+    <string name="settings_clear">清空全部数据</string>
+    <string name="settings_about">关于</string>
+    <string name="settings_about_version">版本</string>
+
+    <!-- 通知通道 -->
+    <string name="notification_channel_expiry_name">保质期提醒</string>
+    <string name="notification_channel_expiry_desc">原料或成品即将过期时通知</string>
+    <string name="notification_channel_inventory_name">库存预警</string>
+    <string name="notification_channel_inventory_desc">原料低于安全库存时通知</string>
+
+    <string name="notification_expiry_title">保质期预警</string>
+    <string name="notification_inventory_title">库存预警</string>
+</resources>

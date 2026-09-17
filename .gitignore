@@ -1,0 +1,22 @@
+# Build / IDE
+/build
+/app/build
+/.idea
+/*.iml
+/app/*.iml
+.DS_Store
+local.properties
+captures/
+.externalNativeBuild
+.cxx
+*.apk.idsig
+
+# Gradle
+.gradle/
+gradle-app.setting
+!gradle-wrapper.jar
+
+# Keystore（自行管理）
+*.jks
+*.keystore
+release.properties

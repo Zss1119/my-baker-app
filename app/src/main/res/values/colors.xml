@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 主色：暖橘（烘焙主题色，区别于原国企商务蓝，凸显私用属性） -->
+    <color name="brand_primary">#C95A2A</color>
+    <color name="brand_primary_dark">#8C3B14</color>
+    <color name="brand_secondary">#E8B14F</color>
+    <color name="brand_surface">#FFF8F2</color>
+    <color name="brand_on_surface">#1F1A17</color>
+
+    <!-- 警示色 -->
+    <color name="warning_amber">#D9A441</color>
+    <color name="danger_red">#C75450</color>
+    <color name="success_green">#5C9A6B</color>
+</resources>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Android 11 及以下自动备份规则 -->
+<full-backup-content>
+    <include domain="database" path="bake_erp.db" />
+    <include domain="sharedpref" path="." />
+</full-backup-content>
